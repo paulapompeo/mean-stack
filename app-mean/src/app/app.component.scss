@@ -1,0 +1,58 @@
+.app-mean {
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+  color: #fff;
+  display: grid;
+  grid-template-columns: 14rem 1fr;
+  grid-template-rows: 3rem 1fr;
+  grid-template-areas: "header header"
+                       "menu main";
+}
+
+.header {
+  grid-area: header;
+  background-color: #ff424f;
+  display: grid;
+  grid-template-columns: 14rem 1fr;
+
+  &__logo {
+      background-color: #f83745;
+      font-weight: 600;
+      display: grid;
+      padding-left: 2rem;
+      align-content: center;
+  }
+}
+
+.menu {
+  grid-area: menu;
+  padding: 2rem 0;
+  background-color: #191c1f;
+
+  &__item {
+      height: 3rem;
+      display: grid;
+      align-items: center;
+      padding: 0 2rem;
+      cursor: pointer;
+  }
+
+  &__item--selected {
+      background-color: #222b31;
+      color: #f83745;
+  }
+}
+
+.main {
+  grid-area: main;
+  padding: 2rem;
+  background-color: #222b31;
+  overflow-y: scroll;
+
+  &__title {
+      font-size: 2rem;
+      font-weight: 200;
+      margin-bottom: 2rem;
+  }
+}

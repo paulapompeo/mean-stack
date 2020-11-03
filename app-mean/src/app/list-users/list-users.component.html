@@ -1,0 +1,10 @@
+<div class="user-list">
+  <div
+      *ngFor="let user of users | async"
+      class="user-card">
+      <div class="user-card__name">{{ user.name }}</div>
+      <div class="user-card__lastname">{{ user.lastname }}</div>
+      <div class="user-card__email">{{ user.email }}</div>
+      <div class="user-card__phone">{{ user.phone }}</div>
+  </div>
+</div>
